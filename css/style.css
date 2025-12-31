@@ -1,0 +1,274 @@
+/*  GLOBAL  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+.logo{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+/*  HEADER */
+.header {
+  padding: 25px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937; 
+  color: #ffffff;
+  border-bottom: none;
+}
+
+
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* BADGE */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+
+  background: #ef4444;       /* red badge */
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+  line-height: 1;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 24px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* IMAGE (FULL IMAGE, NO CROP) */
+.product-image {
+  width: 100%;
+  height: 200px;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* INFO */
+.product-info {
+  padding: 14px;
+}
+
+.product-name {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.price-summary{
+  margin-top: 200px;
+}
+
+.add-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #2f80ed;
+  color: #fff;
+  cursor: pointer;
+}
+/*  CART PANEL  */
+.cart-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 360px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* SCROLL AREA */
+.cart-content {
+  flex: 1;
+  overflow-y: auto;
+  margin: 12px 0;
+  padding-right: 6px;
+}
+
+/* Hide cart */
+.hidden {
+  display: none;
+}
+
+/* Header */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/*  CART ITEMS  */
+.cart-row {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.cart-thumb img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #f7f7f7;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cart-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cart-unit-price {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+/* ACTIONS */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f3f3;
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+
+.qty button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty span {
+  min-width: 16px;
+  text-align: center;
+}
+
+/* REMOVE */
+.remove-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.remove-btn:hover {
+  opacity: 1;
+}
+
+/* LINE TOTAL */
+.cart-line-total {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* EMPTY STATE */
+.empty-cart {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+/*  CHECKOUT */
+.checkout-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 24px;
+  border: none;
+  background: #2f80ed;
+  color: #fff;
+  cursor: pointer;
+}
+
+.product-card {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}

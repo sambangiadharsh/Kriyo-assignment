@@ -70,7 +70,14 @@ The project demonstrates clean architecture, state management, and dynamic UI up
 
 The application follows **separation of concerns** and **unidirectional data flow**.
 
+## 📸 Screenshots
+
+![Home Page](image/homepage.png)
+
+![Cart View](image/cart.png)
+
 ---
+
 
 ## 🚀 How It Works
 
@@ -82,6 +89,7 @@ The application follows **separation of concerns** and **unidirectional data flo
 
 ---
 
+
 ## 🖥️ Run Locally
 
 ```bash
@@ -89,8 +97,4 @@ git clone https://github.com/sambangiadharsh/Kriyo-assignment.git
 cd Kriyo-assignment
 
 
-## 📸 Screenshots
 
-![Home Page](image/homepage.png)
-
-![Cart View](image/cart.png)

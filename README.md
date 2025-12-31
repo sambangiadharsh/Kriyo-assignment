@@ -91,6 +91,6 @@ cd Kriyo-assignment
 
 ## 📸 Screenshots
 
-![Home Page](images/homepage.png)
+![Home Page](image/homepage.png)
 
-![Cart View](images/cart.png)
+![Cart View](image/cart.png)
